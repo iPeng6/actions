@@ -9,4 +9,4 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-    - run: curl 'https://api.coinmarketcap.com/asset/v3/loyalty/check-in/' -H 'authorization:${{TOKEN}}' -H 'Content-Type:application/json;charset=UTF-8' --data-raw '{}'
+    - run: curl 'https://api.coinmarketcap.com/asset/v3/loyalty/check-in/' -H 'authorization:${{secrets.TOKEN}}' -H 'Content-Type:application/json;charset=UTF-8' --data-raw '{}'
